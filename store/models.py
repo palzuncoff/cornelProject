@@ -14,7 +14,7 @@ def get_image_path(instance, filename):
 
 class Product(models.Model):
     product_name=models.CharField(max_length=900)
-    product_image = models.ImageField(upload_to=get_image_path, default='/img/tovar.jpg', null=True)
+    product_image = models.ImageField(upload_to=get_image_path, null=True)
     product_price=models.FloatField(max_length=10)
     product_discaunt=models.CharField(max_length=5, blank=True)
     product_category=models.CharField(max_length=1000)

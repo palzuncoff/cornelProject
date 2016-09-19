@@ -21,10 +21,14 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.staticfiles.views import serve
 from django.template.backends import django
+from django.contrib.auth.views import login, logout
+
 
 urlpatterns = [
     url(r'^store/', include('store.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^login/', login, {'template_name': 'user/login.html'}),
+
 
 ]
 

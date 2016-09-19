@@ -15,7 +15,7 @@
 
     <ul>
         {% for product in object_list %}
-            <li><img src="{{ product.product_image.url }}" alt="товар"><h2>{{ product.product_name }}</h2></li>
+            <li><img src="{{ product.product_image.url }}"><h2>{{ product.product_name }}</h2></li>
         {% endfor %}
     </ul>
 </body>

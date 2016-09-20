@@ -130,7 +130,7 @@ MEDIA_ROOT = os.path.join(_PATH, 'media')
 MEDIA_URL = '/media/'
 
 
-#STATIC_ROOT = os.path.join(_PATH, 'static')
+STATIC_ROOT = os.path.join(_PATH, 'static')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
